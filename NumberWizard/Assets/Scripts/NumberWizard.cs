@@ -10,6 +10,13 @@ public class NumberWizard : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
+		StartGame();
+		
+	}
+	
+	//Initialize the Game
+	void StartGame(){
+		
 		print("Welcome to Number Wizard");
 		print("Pick a number in your head, but don't tell me!");
 		
@@ -17,8 +24,18 @@ public class NumberWizard : MonoBehaviour {
 		
 		print("The highest number you can pick is " + maximumNumber);
 		print("The lowest number you can pick is " + minimumNumber);
+		maximumNumber++;
 		
 		print("Is the number " + guess + "?");
+		print("UP arrow for higher, DOWN for lower, ENTER for equal");
+		
+	}
+	
+	//Calculate the next guess
+	void NextGuess(){
+		
+		guess = (minimumNumber + maximumNumber) / 2;
+		print("Is it " + guess + "?");
 		print("UP arrow for higher, DOWN for lower, ENTER for equal");
 		
 	}
@@ -29,13 +46,11 @@ public class NumberWizard : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.DownArrow)){
 			//print("Lower it is then");
 			maximumNumber = guess;
-			guess = (minimumNumber + maximumNumber) / 2;
-			print("Is it " + guess + "?");
+			NextGuess();
 		}else if (Input.GetKeyDown(KeyCode.UpArrow)){
 			//print("Higher it is then");
 			minimumNumber = guess;
-			guess = (minimumNumber + maximumNumber) / 2;
-			print("Is it " + guess + "?");
+			NextGuess();
 		}else if (Input.GetKeyDown(KeyCode.Return)){
 			print("The Number is " + guess);
 		}
