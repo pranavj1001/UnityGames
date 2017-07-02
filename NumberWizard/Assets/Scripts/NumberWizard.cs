@@ -3,13 +3,14 @@ using System.Collections;
 
 public class NumberWizard : MonoBehaviour {
 
-	int maximumNumber = 10000;
-	int minimumNumber = 1;
+	int maximumNumber;
+	int minimumNumber;
 	int guess;
 
 	// Use this for initialization
 	void Start () {
 		
+		InitializeVariables();
 		StartGame();
 		
 	}
@@ -17,6 +18,7 @@ public class NumberWizard : MonoBehaviour {
 	//Initialize the Game
 	void StartGame(){
 		
+		print("========================");
 		print("Welcome to Number Wizard");
 		print("Pick a number in your head, but don't tell me!");
 		
@@ -40,6 +42,13 @@ public class NumberWizard : MonoBehaviour {
 		
 	}
 	
+	void InitializeVariables(){
+		
+		maximumNumber = 10000;
+		minimumNumber = 1;
+		
+	}
+	
 	// Update is called once per frame
 	void Update () {
 	
@@ -53,6 +62,8 @@ public class NumberWizard : MonoBehaviour {
 			NextGuess();
 		}else if (Input.GetKeyDown(KeyCode.Return)){
 			print("The Number is " + guess);
+			InitializeVariables();
+			StartGame();
 		}
 		
 	
