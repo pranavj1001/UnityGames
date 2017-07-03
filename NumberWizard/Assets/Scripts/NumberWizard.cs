@@ -15,7 +15,7 @@ public class NumberWizard : MonoBehaviour {
 		
 	}
 	
-	//Initialize the Game
+	// Initialize the Game
 	void StartGame(){
 		
 		print("========================");
@@ -33,7 +33,7 @@ public class NumberWizard : MonoBehaviour {
 		
 	}
 	
-	//Calculate the next guess
+	// Calculate the next guess
 	void NextGuess(){
 		
 		guess = (minimumNumber + maximumNumber) / 2;
@@ -42,6 +42,7 @@ public class NumberWizard : MonoBehaviour {
 		
 	}
 	
+	// Assign values to the variables
 	void InitializeVariables(){
 		
 		maximumNumber = 10000;
@@ -65,7 +66,6 @@ public class NumberWizard : MonoBehaviour {
 			InitializeVariables();
 			StartGame();
 		}
-		
 	
 	}
 }
