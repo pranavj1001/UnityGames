@@ -1,5 +1,5 @@
-NumberWizard/Temp/
-Text101/Temp/
+**/Temp/
+**/Library/metadata/
 
 # Windows image file caches
 Thumbs.db
