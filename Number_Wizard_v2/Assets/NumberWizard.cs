@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class NumberWizard : MonoBehaviour {
 
-    int maxNumber = 10000;
-    int minNumber = 1;
+    int maxNumber;
+    int minNumber;
     int guess;
 
-    bool numberFound = false;
-    bool sameNumberCondtion = false;
+    bool numberFound;
+    bool sameNumberCondtion;
 
     // Use this for initialization
     void Start ()
@@ -21,6 +21,11 @@ public class NumberWizard : MonoBehaviour {
     // Shows up initial text on the screen
     void StartGame()
     {
+        maxNumber = 10000;
+        minNumber = 1;
+        numberFound = false;
+        sameNumberCondtion = false;
+
         // Greetings
         Debug.Log("Hi there!, Welcome to Number Wizard");
 
@@ -74,8 +79,13 @@ public class NumberWizard : MonoBehaviour {
             }
             else
             {
-                Debug.Log("I have guessed the number correctly, please restart me to challenge me again human");
+                Debug.Log("I have guessed the number correctly, please restart me to challenge me again human, Press R to restart");
             }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartGame();
         }
 	}
 
