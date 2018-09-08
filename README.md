@@ -13,13 +13,18 @@ The games in this repo are inspired from the ones taught in the course.
 
 1. **Text101:** This is a very basic game which covers a story in an interactive way. The user can make actions with the help of keyboard. If you're a beginner, this game might help you to get started with Unity.
 
-2. **NumberWizard (WIP):** This game is similar to 'guessing the number' game which we all know. The computer thinks of a number and the user has to guess that number. The user can also set the maximum number of guesses. So if you're a beginner then this game might help you to get started with Unity.
+2. **Text101 (v2):** This is the updated version of the Text101. It includes a new story and a new UI.
 
-3. **BlockBreaker (WIP)**
+3. **NumberWizard:** This game is similar to 'guessing the number' game which we all know. The computer thinks of a number and the user has to guess that number. The user can also set the maximum number of guesses. So if you're a beginner then this game might help you to get started with Unity.
+
+4. **NumberWizard (v2) (WIP):** This is the updated version of the NumberWizard. It is currently under development.
+
+5. **BlockBreaker (WIP)**
 
 ## Upcoming Games
 
 1. Block Breaker
+2. NumberWizard (v2)
 
 ## Technologies
 
