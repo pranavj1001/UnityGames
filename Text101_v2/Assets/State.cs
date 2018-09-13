@@ -15,7 +15,7 @@ public class State : ScriptableObject {
 		return storyText;
 	}
 
-	public State[] GetNextStates()
+	public State[] GetNextState()
 	{
 		return nextStates;
 	}
