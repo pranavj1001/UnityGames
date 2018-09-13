@@ -9,4 +9,9 @@ public class State : ScriptableObject {
 	// 								min number of lines to show scroll bar)
 	[TextArea(10, 14)] [SerializeField] string storyText;
 
+	public string GetStateStory() 
+	{
+		return storyText;
+	}
+
 }
