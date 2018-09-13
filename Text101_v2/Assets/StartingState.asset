@@ -26,3 +26,4 @@ MonoBehaviour:
     1. Take them head on - rush the 10 guards.
 
     2. Sneak my way to the emergency exit.'
+  nextStates: []
