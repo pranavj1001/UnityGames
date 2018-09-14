@@ -806,6 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1074892042}
   startingState: {fileID: 11400000, guid: d14fee03e8cea724791429bba02d4208, type: 2}
+  state: {fileID: 0}
 --- !u!4 &1539893397
 Transform:
   m_ObjectHideFlags: 0
