@@ -801,12 +801,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1539893395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe97e49aa881d194e97df4a5bf7ea3db, type: 3}
+  m_Script: {fileID: 11500000, guid: ed2ba0c12d95e784a9465005ac162fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1074892042}
-  startingState: {fileID: 11400000, guid: d14fee03e8cea724791429bba02d4208, type: 2}
-  state: {fileID: 0}
+  startingState: {fileID: 11400000, guid: 13264f7b9284ff84b8cc0b48bb3e9cfd, type: 2}
 --- !u!4 &1539893397
 Transform:
   m_ObjectHideFlags: 0
